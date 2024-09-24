@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Explore Countries</h1>
+      <button id="darkModeToggle">Dark Mode</button>
+    </header>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for a country" />
+    </div>
+
+    <div class="filters">
+      <select id="regionFilter">
+        <option value="">Filter by Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+
+      <select id="subRegionFilter">
+        <option value="">Filter by Sub-region</option>
+        <!-- as opções serão preeenchidas dinâmicamente -->
+      </select>
+
+      <select id="populationFilter">
+        <option value="">Filter by Population</option>
+        <option value="<1000000">Less than 1M</option>
+        <option value="1000000-10000000">1M - 10M</option>
+        <option value="10000000-100000000">10M - 100M</option>
+        <option value=">100000000">More than 100M</option>
+      </select>
+
+      <select id="sortFilter">
+        <option value="">Sort by</option>
+        <option value="name-asc">Name (A-Z)</option>
+        <option value="name-desc">Name (Z-A)</option>
+        <option value="population-asc">Population (Ascending)</option>
+        <option value="population-desc">Population (Descending)</option>
+        <option value="area-asc">Area (Ascending)</option>
+        <option value="area-desc">Area (Descending)</option>
+      </select>
+    </div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn">
+  <img src="arrow.png" alt="Back to Top">
+</button>
+
+      
+
+    <div id="countryList" class="country-list">
+      <!-- os países serão carregados aqui -->
+    </div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
